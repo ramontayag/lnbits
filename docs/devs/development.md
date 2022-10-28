@@ -12,7 +12,7 @@ For developers
 Thanks for contributing :)
 
 
-Tests
+Setup
 =====
 
 This project has unit tests that help prevent regressions. Before you can run the tests, you must install a few dependencies:
@@ -21,22 +21,34 @@ poetry install
 npm i
 ```
 
-Then to run the tests:
+Tests
+=====
+
 ```bash
 make test
 ```
 
-Run formatting:
+Formatting
+=====
 ```bash
 make format
 ```
 
-Run mypy checks:
+mypy checks
+=====
 ```bash
 poetry run mypy
 ```
 
-Run everything:
+Everything above
+=====
 ```bash
 make all
+```
+
+Start the server
+=====
+
+```bash
+poetry run lnbits
 ```

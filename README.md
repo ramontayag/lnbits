@@ -31,6 +31,10 @@ Checkout the LNbits [YouTube](https://www.youtube.com/playlist?list=PLPj3KCksGbS
 
 LNbits is inspired by all the great work of [opennode.com](https://www.opennode.com/), and in particular [lnpay.co](https://lnpay.co/). Both work as excellent funding sources for LNbits.
 
+## Development
+
+See the [development docs](docs/devs/development.md) to start it locally.
+
 ## Running LNbits
 
 See the [install guide](docs/guide/installation.md) for details on installation and setup.
