@@ -1,7 +1,9 @@
+import sys
 import glob
 import json
 import os
 from typing import Any, List, NamedTuple, Optional
+from loguru import logger
 
 import jinja2
 import shortuuid  # type: ignore
@@ -52,6 +54,8 @@ class ExtensionManager:
                 is_valid = True
                 is_admin_only = True if extension in self._admin_only else False
             except Exception:
+                type, value, traceback = sys.exc_info()
+                logger.info(f"Ignoring extension {extension}; there was an exception importing: {value.strerror}/{value.filename}")
                 config = {}
                 is_valid = False
                 is_admin_only = False
