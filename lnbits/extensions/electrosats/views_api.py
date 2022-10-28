@@ -6,13 +6,13 @@
 # (use httpx just like requests, except instead of response.ok there's only the
 #  response.is_error that is its inverse)
 
-from . import example_ext
+from . import electrosats_ext
 
 # add your endpoints here
 
 
-@example_ext.get("/api/v1/tools")
-async def api_example():
+@electrosats_ext.get("/api/v1/tools")
+async def api_electrosats():
     """Try to add descriptions for others."""
     tools = [
         {

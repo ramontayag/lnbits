@@ -5,13 +5,13 @@ from fastapi import APIRouter
 from lnbits.db import Database
 from lnbits.helpers import template_renderer
 
-db = Database("ext_example")
+db = Database("ext_electrosats")
 
-example_ext: APIRouter = APIRouter(prefix="/example", tags=["example"])
+electrosats_ext: APIRouter = APIRouter(prefix="/electrosats", tags=["electrosats"])
 
 
-def example_renderer():
-    return template_renderer(["lnbits/extensions/example/templates"])
+def electrosats_renderer():
+    return template_renderer(["lnbits/extensions/electrosats/templates"])
 
 
 from .views import *  # noqa
