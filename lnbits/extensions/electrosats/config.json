@@ -1,0 +1,9 @@
+{
+  "name": "Electrosats",
+  "short_description": "Quick, low-risk way to let others receive payments for their app",
+  "icon": "info",
+  "contributors": [
+    "ramontayag",
+   " ce-walalang"
+  ]
+}
