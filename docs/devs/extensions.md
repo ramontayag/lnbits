@@ -21,6 +21,7 @@ Going over the example extension's structure:
 * views_api.py: This is where your public API would go. It will be exposed at "$DOMAIN/$PLUGIN/$ROUTE". For example: https://lnbits.com/mysuperplugin/api/v1/tools.
 * views.py: The `/` path will show up as your plugin's home page in lnbits' UI. Other pages you can define yourself. The `templates` folder should explain itself in relation to this.
 * migrations.py: Create database tables for your plugin. They'll be created automatically when you start lnbits.
+* `$PLUGIN/config.json`: fill up with your extension's details.
 
 ... This document is a work-in-progress. Send pull requests if you get stuck, so others don't.
 
